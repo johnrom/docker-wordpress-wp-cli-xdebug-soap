@@ -2,7 +2,7 @@
 # Docker Hub: https://registry.hub.docker.com/u/johnrom/docker-wordpress-wp-cli-xdebug/
 # Github Repo: https://github.com/johnrom/docker-wordpress-wp-cli-xdebug
 
-FROM johnrom/docker-wordpress-wp-cli-xdebug
+FROM johnrom/docker-wordpress-wp-cli-xdebug:latest
 MAINTAINER web@johnrom.com
 
 RUN apt-get update && apt-get install -y libxml2-dev && docker-php-ext-install soap
